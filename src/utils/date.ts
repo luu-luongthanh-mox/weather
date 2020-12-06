@@ -1,8 +1,11 @@
-export const isToday = (date: Date) => {
-  const today = new Date();
+export const isEqualDate = (
+  date: moment.Moment,
+  compareDate: moment.Moment
+) => {
+  // const today = new Date();
   return (
-    date.getDate() === today.getDate() &&
-    date.getMonth() === today.getMonth() &&
-    date.getFullYear() === today.getFullYear()
+    date.date() === compareDate.date() &&
+    date.month() === compareDate.month() &&
+    date.year() === compareDate.year()
   );
 };

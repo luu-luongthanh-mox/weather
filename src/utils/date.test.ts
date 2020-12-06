@@ -1,15 +1,19 @@
-import { isToday } from "./date";
+import moment from "moment-timezone";
+
+import { isEqualDate } from "./date";
 
 describe("hooks: useGetDayName", () => {
   it("should return true", () => {
-    const input = new Date();
+    const date = moment();
+    const compareDate = moment();
     const output = true;
-    expect(isToday(input)).toEqual(output);
+    expect(isEqualDate(date, compareDate)).toEqual(output);
   });
 
   it("should return false", () => {
-    const input = new Date("2020-1-1");
+    const date = moment("2020-1-1");
+    const compareDate = moment();
     const output = false;
-    expect(isToday(input)).toEqual(output);
+    expect(isEqualDate(date, compareDate)).toEqual(output);
   });
 });
