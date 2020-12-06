@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: LocationInfo renders data on screen 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <p
+      class="cityName"
+    >
+      Hong Kong
+    </p>
+    <p
+      class="type"
+    >
+      City
+    </p>
+    <p>
+      timezone: Asia/Hong_Kong
+    </p>
+  </div>
+</DocumentFragment>
+`;

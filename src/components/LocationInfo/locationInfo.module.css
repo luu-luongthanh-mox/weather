@@ -1,0 +1,14 @@
+.cityName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #0062cc;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.type {
+  font-weight: bold;
+}
